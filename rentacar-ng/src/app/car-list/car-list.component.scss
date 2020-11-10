@@ -1,0 +1,57 @@
+.card{
+    margin-top:20px;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0px 10px 33px -1px rgba(84,116,140,0.5);
+    transition:0.3s;
+    margin-top: 15px;
+}
+
+.card:hover:after{
+    transition:all 0.2s;
+    margin-top:20px;
+}
+
+.card img:hover{
+    transition: 0.3s;
+}
+
+.selected{
+    background: linear-gradient(180deg, rgba(84,116,140,1) 0%, rgba(111,160,194,1) 100%);
+    color:white;
+    
+}
+.selected btn{
+    color:white;
+}
+
+.btn-popular{
+    color: #fff;
+    border-color: white;
+}
+.btn-popular:hover{
+    color: #54748c;
+    border-color: white;
+    background-color: white;
+}
+.selected::before{
+    width :max-content;
+    margin-top: -1em;
+    margin-left: -1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius:20px;
+    background-color: red;
+    color:white;
+    content: "POPULAR";
+    
+}
+
+.details-select{
+    background-color:rgb(75, 75, 75);
+    color:white;
+}
+.details-select button{
+    color:white;
+}

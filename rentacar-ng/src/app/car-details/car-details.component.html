@@ -1,0 +1,16 @@
+<div class="container" *ngIf="car">
+    <div class="row align-items-center">
+        <div class="col-lg-4">
+            <img src="{{car.imgUrl}}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 p-5">
+            <h1 >{{car.name}} <span class="btn-rent" (click)="rentCar(car)">RENT</span></h1>
+            <hr>
+            <p class="car-details"><span>Price: </span>{{car.price}} BAM <br> <span>Color: </span>{{car.color}} <br> <span>Year: </span> {{car.year}}</p>
+            <p>{{car.details}}</p>
+        </div>
+    </div>
+</div>
+
+<button (click)="addMessage()">Add message (child)</button>
+<button (click)="clearMessages()">Clear messages</button>
